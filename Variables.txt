@@ -1,0 +1,83 @@
+public class PrimitiveType {
+//기본형
+    // 정수형, 범위에 따라서 4가지 종류, int 많이 사용
+    // 1. byte: 크기가 1 byte, 1 byte = 8 bits, 2^8 만큼의 변수 다룰 수 있음, -2^7~2^7(-128~127)
+    // 2. short: 크기가 2 bytes, -2^15~2^15-1, -32768~32767
+    // 3. int: 크기 4 bytes, -2^31~2^31-1
+    // 4. long: 크기 8 bytes, -2^63~2^31-1
+
+    // 실수형, double 많이 사용
+    // 1. double(8 bytes). 15자리까지
+    // 2. float(4 bytes), 7자리
+
+    // 문자형
+    // char(2 bytes), ' ' 사용
+    // 아스키코드: 표 참고, ex) Dec 97과 Char a 대응
+    // 유니코드: 아스키코드에서 발전, 16진수
+
+    // 논리형
+    // bootlean(1 byte)
+
+// 참조형
+    // 참조형 데이터 값은 힙 메모리 영역에,
+    // 변수에 대입되는 값은 힙 메모리 영역 주소 값
+    // String
+
+    //상수(constants, final variables ), 한 번 값이 할당되면 재할당 불가, 전체 대문자로 표기, 단어간 _사용
+
+
+    public static void main(String[] args) {
+
+        double a=1.23;
+        double b=9.45;
+        System.out.println("Hello World");
+        System.out.println(a);
+        System.out.println(b);
+        char char_1='a';
+        char char_2=97;
+        char char_3=43;
+        char char_4 = 0x61;
+        System.out.println(char_1);
+        System.out.println(char_2);
+        System.out.println(char_3);
+        System.out.println(char_4);
+
+        boolean bool_1 = true;
+        boolean bool_2 = false;
+        boolean bool_3 = (100<0);
+
+
+        String b1 = "Hello World!";
+        String c1 = "Hello World!";
+
+        //b==c, 같은 주소
+
+        final double PI = 3.14;
+
+    }
+}
+
+
+
+형변환 
+
+public class TypeCasting {
+// 형변환
+    // byte<short<int<long<float<double
+    public static void main(String[] args) {
+
+        short x = 10;
+        int y = x;
+        System.out.println(x);
+        System.out.println(y);
+        int a1 = 128;
+        short b = (short) a1;
+        System.out.println(b);
+
+        int e = 10;
+        short f = 20;
+        short g = (short) (e + f);
+
+    }
+}
+
