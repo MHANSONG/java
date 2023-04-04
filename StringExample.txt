@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+
+public class ListsExample {
+
+    public static void main(String[] args) {
+
+
+        //Lists, 순서를 구분하는 자료구조이고 중복을 허용한다
+        //Vector, ArrayList, LinkedList가 있음
+
+        /*ArrayList list = new ArrayList(10);
+        list.add(100);
+        list.add("INFP");
+
+        for (int i = 0; i < list.size(); i++){
+            System.out.println(list.get(i));
+        }*/
+
+        ArrayList<Integer> list = new ArrayList(10);
+        list.add(100);
+//        list.add("INFP");
+
+        for (int i = 0; i < list.size(); i++){
+            System.out.println(list.get(i));
+        }
+
+
+
+    }
+}
